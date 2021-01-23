@@ -1,0 +1,196 @@
+﻿
+/* Box med meny och text */
+
+body {
+    font-family: arial;
+}
+
+ul, header {
+    margin: 0;
+    padding: 0;
+}
+
+.boxWithMenu {
+    width: 99%;
+    margin: auto;
+    height: 600px;
+}
+
+.boxWithMenu h3 {
+        font-size: 1em;
+        padding-top: 2%;
+}
+
+ul.boxMenu {
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid black;
+    height: 605px;
+    margin-top: 72px;
+}
+
+.boxMenu li {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+
+.boxMenu button {
+    width: 95%;
+    padding: 2%;
+    border-radius: 0;
+    border: 1px solid black;
+}
+.boxMenu button:hover {
+        color: white;
+        background-color: black;
+}
+
+form.boxMenu {
+    width: 29.8%;
+    float: left;
+    height: 600px;
+}
+
+.boxText {
+    padding-top: 5px;
+    border: 2px solid black;
+    float: right;
+    width: 69%;
+    height: 605px;
+}
+
+.boxText h3 {
+        font-weight: bold;
+        font-size: 1.2em; 
+        margin-top: 3%; 
+        padding-left: 6%;
+        margin-bottom: 4%; 
+}
+
+.boxText p {
+        padding-left: 6%;
+        padding-right: 6%;
+}
+
+ul.courses {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+/* Header */
+img {
+    max-width: 100%; 
+}
+
+/* Datum i header */
+
+
+.date {
+    border: 1px solid black;
+    padding: 1%;
+    width: 245px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: white; 
+}
+
+
+/* Knappar */
+.click {
+    margin-left: 6%;
+    margin-right: 5%;
+    padding: 1%; 
+}
+
+.button1 {
+    margin-top: 10%; 
+}
+
+
+/* Responsivitet */
+
+
+
+@media all and (max-width: 800px) {
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .navbarbrand {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        float: none;
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
+        text-align: center; 
+    }
+
+    form.boxMenu {
+        width: 100%;
+        max-height: 300px;
+        padding-bottom: 0;
+        margin-bottom: 8%;
+    }
+
+    .boxText {
+        padding-top: 5px;
+        border: 2px solid black;
+        float: right;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5%;
+        border-top: none;
+    }
+
+    ul.boxMenu {
+        border-bottom: none;
+    }
+
+    .date {
+        text-align: center;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%; 
+    }
+
+    body {
+        width: 100%;
+        margin: auto; 
+    }
+
+}
+
+@media all and (max-width: 700px) {
+
+ 
+    .date {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

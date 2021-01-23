@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moment 1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/images/loggamom1.png" alt="Logotyp" width="300"></a>
+                <p class="date">Dagens datum: @DateTime.Now.ToString("yyyy-MM-dd ") </p>
+                </button>
+</nav>
+    </header>
+
+    <div class="container">
+        <main class="pb-3">
+            <div class="boxWithMenu">
+    <form class="boxMenu">
+        <ul class="boxMenu">
+            <li><button class="button1" asp-area="" asp-page="/Index">Start</button></li>
+            <li><button class="button2" asp-area="" asp-page="/Razor">Razor</button></li>
+            <li><button class="button3" asp-area="" asp-page="/About">Om sidan</button></li>
+        </ul>
+    </form>
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <br />
+            &copy; Av Malin Svensson - kontakta mig via epost: <a href="mailto:malin_s@live.se">malin_s@live.se</a>
+            <br /><br /><br /><br />
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
